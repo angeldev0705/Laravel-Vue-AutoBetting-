@@ -1,0 +1,113 @@
+//@import '~vuetify/src/styles/styles.sass';
+//
+//.some-class {
+//  color: 1px solid map-get($grey, lighten-4);
+//}
+
+// styles for less darker version
+/*
+.theme--dark.v-application {
+  background: #303030 !important;
+}
+
+.theme--dark.v-navigation-drawer,
+.theme--dark.v-sheet,
+.theme--dark.v-data-table,
+.theme--dark.v-tabs > .v-tabs-bar {
+  background-color: #424242 !important;
+}
+
+.theme--dark.v-footer {
+  background-color: #212121 !important;
+}
+*/
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.width-auto {
+  width: auto !important;
+}
+
+.v-input {
+  &.text-center {
+    input {
+      text-align: center;
+    }
+  }
+}
+
+.v-dialog {
+  .about-text {
+    max-height: 60vh;
+    overflow-y: scroll;
+  }
+}
+
+.v-parallax {
+  .v-parallax__content {
+    padding: 0;
+  }
+}
+
+.game-container {
+  .v-badge {
+    .v-badge__badge {
+      z-index: 10;
+    }
+  }
+}
+
+.static-background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.v-data-table tbody tr.v-data-table__empty-wrapper:hover:not(.v-data-table__expanded__content) {
+  background: inherit;
+}
+
+.input-with-button {
+  .v-input__append-inner {
+    margin-top: 10px;
+  }
+}
+
+.wrap-long-text {
+  table {
+    table-layout: fixed;
+    tbody {
+      tr {
+        td {
+          overflow-wrap: break-word;
+        }
+      }
+    }
+  }
+}
+
+#chat {
+  .v-navigation-drawer__content {
+    overflow-y: hidden;
+
+    .chat-messages-container {
+      max-height: 80%;
+
+      .v-list-item__content {
+        p {
+          font-size: 14px;
+          line-height: 14px;
+        }
+        .link {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

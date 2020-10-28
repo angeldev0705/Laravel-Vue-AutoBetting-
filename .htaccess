@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # RewriteBase /public
+
+    # Remove trailing slash from the URL
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R]
+
+    RewriteCond %{REQUEST_URI} !^/install\.php
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
